@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { Text, View } from '@/components/Themed';
+import { View } from '@/components/Themed';
 
 import DreamForm from '@/components/DreamForm';
 
@@ -8,7 +8,6 @@ import DreamForm from '@/components/DreamForm';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
       <DreamForm/>
     </View>
   );
