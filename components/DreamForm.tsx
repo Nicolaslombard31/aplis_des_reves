@@ -21,6 +21,7 @@ import { Dropdown } from 'react-native-paper-dropdown';
 
 
 
+
 const { width } = Dimensions.get('window');
 
 const OPTIONS = [
@@ -171,7 +172,7 @@ export default function DreamForm() {
 
           <View style={{ width: width * 0.8, alignSelf: 'center', marginTop: 12}}>
             <Text style={{ marginBottom: 8 }}>Heure du rêve</Text>
-            <Button mode="outlined" onPress={openTimePicker} style={ styles.button}>
+            <Button mode="outlined" onPress={openTimePicker} style={ styles.button} buttonColor='black' textColor='white'>
               {formattedTime ? `Heure: ${formattedTime}` : "Choisir l'heure"}
             </Button>
           </View>
@@ -360,6 +361,8 @@ export default function DreamForm() {
           <Button
             onPress={handleDreamSubmission}
             style={styles.button}
+            buttonColor='black'
+            textColor='white'
           >
             Submit
           </Button>
@@ -384,6 +387,5 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 8,
-    backgroundColor: 'darkblue',
   },
 });
